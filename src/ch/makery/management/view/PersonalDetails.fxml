@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.management.controller.PersonalOverviewController">
+   <children>
+      <Label layoutX="74.0" layoutY="25.0" text="Personal Detail" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="studentTable" layoutX="116.0" layoutY="113.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="Column1" prefWidth="63.0" text="No." />
+          <TableColumn fx:id="Column2" prefWidth="347.0" text="Name" />
+            <TableColumn fx:id="Column3" prefWidth="96.0" text="Average" />
+            <TableColumn fx:id="Column4" prefWidth="246.0" text="NickName" />
+            <TableColumn fx:id="Column5" prefWidth="247.0" text="Range" />
+        </columns>
+      </TableView>
+      <Button layoutX="828.0" layoutY="449.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" text="Edit" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="101.0" />
+      <Button layoutX="917.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleDeletePersonal" text="Delete" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>
